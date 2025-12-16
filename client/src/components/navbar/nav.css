@@ -1,0 +1,208 @@
+/* .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+.brand-link {
+    text-decoration: none !important;
+    color: black ; 
+  }
+
+.brand-name .green-dot {
+    color: #28a745 !important; 
+    font-size: 16px;
+    margin-top: 10px !important;
+    margin-left: 4px;
+}
+
+.navbar-buttons {
+    margin-right: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 16px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar-buttons .login-btn {
+    background-color: transparent;
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.navbar-buttons .login-btn:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+
+.navbar-buttons .signup-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: 1px solid #28a745;
+}
+
+.navbar-buttons .signup-btn:hover {
+    background-color: #3ebe5c;
+    border-color: #28a745;
+}
+
+.welcome-msg{
+    color:black !important;
+   margin-top: 32px;
+   margin-right: 20px;
+    font-size: 22px !important;
+} */
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  /* Brand name */
+  .navbar-brand {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+  .brand-link {
+    text-decoration: none !important;
+    color: black; /* Remove underline for the link */
+  }
+  
+  .brand-name .green-dot {
+    color: #28a745 !important; /* Green color for the dot */
+    font-size: 16px;
+    margin-top: 10px !important;
+    margin-left: 4px;
+  }
+  
+  /* Buttons container */
+  .navbar-buttons {
+    margin-right: 50px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  /* Link styles (reset to look like buttons) */
+  .navbar-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 16px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Login button styles */
+  .navbar-buttons .login-btn {
+    background-color: transparent;
+    color: #28a745;
+    border: 1px solid #28a745;
+  }
+  
+  .navbar-buttons .login-btn:hover {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  /* Signup button styles */
+  .navbar-buttons .signup-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: 1px solid #28a745;
+  }
+  
+  .navbar-buttons .signup-btn:hover {
+    background-color: #3ebe5c;
+    border-color: #28a745;
+  }
+  
+  .welcome-msg {
+    color: black !important;
+    font-size: 22px !important;
+    margin-right: 20px;
+  }
+
+  /* Responsive styles for mobile view */
+  @media (max-width: 768px) {
+    .navbar {
+      height: 40px !important; /* Adjust height for content wrapping */
+      
+      flex-direction: row !important; /* Stack items vertically */
+      padding: 10px; /* Adjust padding */
+      text-align: center; /* Center-align content */
+    }
+  
+    .navbar-brand {
+      font-size: 20px; /* Reduce brand name size */
+      /* margin-bottom: 10px; Add spacing between brand and buttons */
+    }
+  
+    .brand-name .green-dot {
+
+      /* margin-left: 10px !important; */
+      font-size: 10px; /* Adjust green dot size */
+    }
+  
+    .navbar-buttons {
+      margin-left: -50px !important;
+      margin-right: 20px !important; /* Remove right margin */
+      gap: 5px; /* Reduce gap between buttons */
+      flex-direction: row !important; /* Stack buttons vertically */
+    }
+  
+    .navbar-buttons a {
+      width: 70px !important; /* Reduce button width */
+      padding: 8px 12px; /* Adjust padding for smaller buttons */
+      font-size: 14px; /* Reduce font size */
+    }
+  
+    .welcome-msg {
+      /* margin-right: 50px !important ;
+      font-size: 14px !important;  */
+      display: none !important;
+      
+    }
+   
+  }
+  

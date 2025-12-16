@@ -1,0 +1,214 @@
+.job-tracker {
+    margin: 20px;
+  }
+  
+  .stats {
+ 
+    margin-top: 100px !important;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .stat-box {
+    gap:10px;
+    background-color: white; 
+    border: 1px solid rgba(154, 235, 147, 0.9);
+    border-radius: 10px;
+    height: 120px;
+    font-size: 22px;
+    padding: 10px 15px;
+    text-align: center;
+    width: 17%;
+    color: black;
+    font-weight: light;
+    box-shadow: 
+      inset 0 0 10px rgba(154, 235, 147, 0.7), 
+      inset 0 0 20px rgba(154, 235, 147, 0.5); 
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th,
+  td {
+    font-size: 18px;
+    color:#222;
+    font-family: bold;
+    border: 1px solid #68ce68;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: #adebad;
+  }
+  
+  .add-job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .add-job input,
+  .add-job select,
+  .add-job button {
+    outline: none;
+ 
+    border-radius: 15px;
+    padding: 10px;
+    width: 400px;
+    font-size: 16px;
+  }
+  
+  .add-job button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-job button:hover {
+    background-color: #68ce68;
+  }
+  
+  select {
+    padding: 5px;
+   
+    font-size: 14px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  .status-dropdown {
+    outline: none;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .status-dropdown.applied {
+    background-color: #007bff; 
+  }
+  
+  .status-dropdown.ghosted {
+    background-color: #ffc107; 
+  }
+  
+  .status-dropdown.no-response{
+    background-color: #17a2b8; 
+  }
+  
+  .status-dropdown.rejected {
+    background-color: #dc3545;
+  }
+  
+  .status-dropdown.interview-going-on {
+    background-color: #28a745;
+  }
+  
+  .status-dropdown option {
+    color: black;
+    background: white;
+  }
+
+  .status-dropdown.Job {
+    background-color: #f783e3; 
+  }
+  
+  button {
+   
+    margin: 30px auto; 
+    display: block; 
+    background-color: #28a745; 
+    color: #fff; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 20px;
+    cursor: pointer; 
+    font-weight: bold;
+    transition: background-color 0.3s ease; 
+    
+  }
+  
+  button:hover {
+    background-color: #68ce68; 
+    box-shadow: 5px 5px 5px rgba(154, 235, 147, 0.5);
+  }
+  .no-jobs-message{
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+   
+ 
+  }
+
+  @media (max-width: 768px) {
+    /* Stack elements vertically for mobile view */
+    .job-tracker {
+      margin: 10px;
+    }
+  
+    /* Stats section as a 2x2 grid */
+    .stats {
+      margin-top: -40px !important;
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Two columns */
+      gap: 8px; /* Space between boxes */
+      margin-bottom: 20px;
+    }
+  
+    .stat-box {
+      width: 80%; /* Full width inside the grid */
+      font-size: 18px; /* Adjust font size */
+      height: auto; /* Let height adjust dynamically */
+      padding: 15px;
+    }
+    .jobs-applied-today{
+      display: none !important;
+    }
+    /* Table styles for better readability on mobile */
+    /* table {
+      width: 400px !important;
+      font-size: 14px; 
+      margin-bottom: 10px;
+    }
+  
+    th,
+    td {
+      padding: 8px; 
+      font-size: 12px;
+    } */
+     table{
+      display: none !important;
+     }
+  
+    /* Add Job form adjustments */
+    .add-job input,
+    .add-job select,
+    .add-job button {
+      width: 90%; /* Full width with some margin */
+      font-size: 14px; /* Smaller font size */
+    }
+  
+    /* Message styling */
+    .no-jobs-message {
+      font-size: 24px; /* Adjust font size for smaller screens */
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  
